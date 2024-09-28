@@ -1,0 +1,17 @@
+{
+  "name": "chrome-recorder-sync",
+  "version": "1.0.0",
+  "description": "Chrome extension to sync DevTools Recorder recordings with GitHub.",
+  "main": "extension/background.js",
+  "scripts": {
+    "scrape:nevadas-clark-county": "npx @puppeteer/replay ./recordings/nv.clark-county@recorder.json",
+    "build:extension": "echo 'No build step defined.'",
+    "task:scrape": "cd scripts && npm run task:scrape"
+  },
+  "dependencies": {
+    "@puppeteer/replay": "^3.1.1",
+    "puppeteer": "23.4.1"
+  },
+  "author": "Zak Horton",
+  "license": "MIT"
+}

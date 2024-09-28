@@ -1,0 +1,39 @@
+name: Scraper Workflow
+
+on:
+  push:
+    paths:
+      - 'recordings/**'
+  workflow_dispatch:
+
+jobs:
+  run-scraper:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install Dependencies
+        run: |
+          cd scripts
+          npm install
+
+      - name: Run Scraper
+        run: |
+          cd scripts
+          # Find the latest recording JSON file
+          RECORDING=$(ls ../recordings/*.json | sort | tail -n 1)
+          echo "Running scraper for $RECORDING"
+          npm run run-scraper "$RECORDING"
+
+      - name: Upload Scraper Results
+        uses: actions/upload-artifact@v3
+        with:
+          name: scraper-results
+          path: results/
