@@ -30,7 +30,7 @@ jobs:
           # Find the latest recording JSON file
           RECORDING=$(ls ../recordings/*.json | sort | tail -n 1)
           echo "Running scraper for $RECORDING"
-          npm run run-scraper "$RECORDING"
+          npm run task:scrape "$RECORDING"
 
       - name: Upload Scraper Results
         uses: actions/upload-artifact@v3
