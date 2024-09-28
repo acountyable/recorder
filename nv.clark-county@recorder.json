@@ -1,0 +1,152 @@
+{
+    "title": "nv.clark-county@recorder.json",
+    "steps": [
+        {
+            "type": "setViewport",
+            "width": 920,
+            "height": 813,
+            "deviceScaleFactor": 1,
+            "isMobile": false,
+            "hasTouch": false,
+            "isLandscape": false
+        },
+        {
+            "type": "navigate",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://www.google.com/",
+                    "title": "Google"
+                }
+            ],
+            "url": "https://www.google.com/"
+        },
+        {
+            "type": "keyDown",
+            "target": "main",
+            "key": "Meta"
+        },
+        {
+            "type": "keyDown",
+            "target": "main",
+            "key": "l"
+        },
+        {
+            "type": "navigate",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://recorderecomm.clarkcountynv.gov/AcclaimWeb/Search/SearchTypeDocType",
+                    "title": ""
+                }
+            ],
+            "url": "https://recorderecomm.clarkcountynv.gov/AcclaimWeb/Search/SearchTypeDocType"
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "xpath///*[@id=\"SearchCriteria\"]/div[1]/div[1]/div/div/div"
+                ]
+            ],
+            "offsetX": 126.6953125,
+            "offsetY": 17
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/All"
+                ],
+                [
+                    "xpath///*[@id=\"f2a93df7-2fa8-408f-9997-0212c0c9637c\"]"
+                ]
+            ],
+            "offsetX": 86.6953125,
+            "offsetY": 13.90625
+        },
+        {
+            "type": "keyDown",
+            "target": "main",
+            "key": "Escape"
+        },
+        {
+            "type": "keyUp",
+            "target": "main",
+            "key": "Escape"
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "xpath///*[@id=\"SearchCriteria\"]/div[1]/div[2]/div/span[2]/span/span[1]"
+                ]
+            ],
+            "offsetX": 104.75,
+            "offsetY": 4.90625
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Yesterday"
+                ],
+                [
+                    "xpath///*[@id=\"DateRangeDropDown_listbox\"]/li[4]"
+                ],
+                [
+                    "text/Yesterday"
+                ]
+            ],
+            "offsetX": 85.75,
+            "offsetY": 6.2109375
+        },
+        {
+            "type": "click",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://recorderecomm.clarkcountynv.gov/AcclaimWeb/Search/SearchTypeDoctype",
+                    "title": "Search"
+                }
+            ],
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Search[role=\"button\"]"
+                ],
+                [
+                    "xpath///*[@id=\"SearchBtn\"]"
+                ]
+            ],
+            "offsetX": 34.3515625,
+            "offsetY": 12.90625
+        },
+        {
+            "type": "click",
+            "assertedEvents": [
+                {
+                    "type": "navigation"
+                }
+            ],
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Export to CSV"
+                ],
+                [
+                    "xpath///*[@id=\"SearchResultGrid\"]/div[1]/a[1]"
+                ],
+                [
+                    "text/Export to CSV"
+                ]
+            ],
+            "offsetX": 39.96875,
+            "offsetY": 11.59375
+        }
+    ]
+}
