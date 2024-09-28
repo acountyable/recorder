@@ -1,0 +1,14 @@
+{
+  "name": "recorder-scripts",
+  "version": "1.0.0",
+  "description": "Scripts to execute Chrome DevTools Recorder recordings using Puppeteer.",
+  "main": "runner.js",
+  "scripts": {
+    "task:scrape": "node runner.js"
+  },
+  "author": "Zak H",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^23.4.1"
+  }
+}
